@@ -3,278 +3,133 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Keep It Clean Exterior Cleaning | Driveway, Patio & Decking Cleaning</title>
-
-<meta name="description" content="Professional driveway, patio and decking cleaning across Coalville and North West Leicestershire. Free quotations. Fully insured.">
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-
+<title>Keep It Clean Exterior Cleaning</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 <style>
-
-:root{
---navy:#002D72;
---green:#3C9A2E;
---light:#F5F7FA;
---dark:#1E293B;
---white:#ffffff;
-}
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-font-family:'Open Sans',sans-serif;
-background:#fff;
-color:#333;
-line-height:1.6;
-}
-
-h1,h2,h3,h4{
-font-family:'Montserrat',sans-serif;
-}
-
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
-
-.top-bar{
-background:var(--green);
-color:white;
-text-align:center;
-padding:12px;
-font-weight:600;
-font-size:14px;
-}
-
-header{
-position:sticky;
-top:0;
-background:white;
-box-shadow:0 2px 15px rgba(0,0,0,.08);
-z-index:1000;
-}
-
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 0;
-}
-
-.logo img{
-height:85px;
-}
-
-.nav-contact{
-display:flex;
-gap:15px;
-align-items:center;
-}
-
-.call-btn{
-background:var(--green);
-color:white;
-padding:12px 22px;
-border-radius:6px;
-text-decoration:none;
-font-weight:700;
-}
-
-.hero{
-min-height:90vh;
-background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=80');
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-text-align:center;
-color:white;
-}
-
-.hero-content{
-max-width:850px;
-margin:auto;
-}
-
-.hero h1{
-font-size:4rem;
-margin-bottom:20px;
-font-weight:800;
-}
-
-.hero p{
-font-size:1.2rem;
-margin-bottom:30px;
-}
-
-.hero-buttons{
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
-}
-
-.btn{
-padding:15px 30px;
-border-radius:6px;
-text-decoration:none;
-font-weight:700;
-}
-
-.btn-green{
-background:var(--green);
-color:white;
-}
-
-.btn-white{
-background:white;
-color:var(--navy);
-}
-
-section{
-padding:90px 0;
-}
-
-.section-title{
-text-align:center;
-margin-bottom:50px;
-}
-
-.section-title h2{
-font-size:2.5rem;
-color:var(--navy);
-}
-
-.features{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.feature-card{
-background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-text-align:center;
-}
-
-.feature-card h3{
-color:var(--navy);
-margin-bottom:10px;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:2.4rem;
-}
-
-.logo img{
-height:65px;
-}
-
-.nav-contact{
-display:none;
-}
-
-}
-
+:root{--navy:#002D72;--green:#3C9A2E;--light:#F5F7FA;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Open Sans',sans-serif;color:#333;line-height:1.6}
+h1,h2,h3{font-family:'Montserrat',sans-serif}
+.topbar{background:var(--green);color:#fff;text-align:center;padding:12px;font-weight:700}
+header{background:#fff;position:sticky;top:0;box-shadow:0 2px 10px rgba(0,0,0,.08);z-index:10}
+.container{width:min(1200px,92%);margin:auto}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0}
+.logo img{height:90px}
+.btn{background:var(--green);color:#fff;padding:12px 22px;text-decoration:none;border-radius:6px;font-weight:700}
+.hero{background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80');background-size:cover;color:#fff;text-align:center;padding:120px 20px}
+.hero h1{font-size:3rem}
+section{padding:70px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:#fff;padding:25px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,.08)}
+.title{text-align:center;margin-bottom:35px;color:var(--navy)}
+table{width:100%;border-collapse:collapse;background:#fff}
+th,td{border:1px solid #ddd;padding:12px}
+th{background:var(--navy);color:#fff}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.placeholder{height:220px;background:#e9eef5;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:bold}
+.contact{background:var(--light)}
+footer{background:var(--navy);color:#fff;text-align:center;padding:25px}
+input,textarea,select{width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:6px}
+button{background:var(--green);color:#fff;border:none;padding:12px 20px;border-radius:6px}
+@media(max-width:768px){.hero h1{font-size:2.2rem}.logo img{height:70px}}
 </style>
 </head>
-
 <body>
-
-<div class="top-bar">
-10% DISCOUNT FOR OAPs & NHS STAFF • FREE QUOTATIONS • FULLY INSURED • LOCAL FAMILY-RUN BUSINESS
-</div>
-
+<div class="topbar">10% DISCOUNT FOR OAPs & NHS STAFF • FREE QUOTATIONS • FULLY INSURED</div>
 <header>
-<div class="container navbar">
-
-<div class="logo">
-<img src="logo.png" alt="Keep It Clean Exterior Cleaning">
-</div>
-
-<div class="nav-contact">
-<a href="tel:07521420024" class="call-btn">
-Call 07521 420024
-</a>
-</div>
-
+<div class="container nav">
+<div class="logo"><img src="logo.png" alt="Keep It Clean"></div>
+<a class="btn" href="tel:07521420024">Call 07521 420024</a>
 </div>
 </header>
 
 <section class="hero">
-
-<div class="container hero-content">
-
 <h1>Bringing Outdoor Surfaces Back To Life</h1>
-
-<p>
-Professional driveway, patio and decking cleaning across Coalville and North West Leicestershire.
-</p>
-
-<div class="hero-buttons">
-
-<a href="#quote" class="btn btn-green">
-Get A Free Quote
-</a>
-
-<a href="tel:07521420024" class="btn btn-white">
-Call Now
-</a>
-
-</div>
-
-</div>
-
+<p>Professional Driveway, Patio & Decking Cleaning Across Coalville & North West Leicestershire</p><br>
+<a class="btn" href="#quote">Get A Free Quote</a>
 </section>
 
 <section>
-
 <div class="container">
-
-<div class="section-title">
-<h2>Why Choose Keep It Clean?</h2>
+<h2 class="title">Why Choose Keep It Clean?</h2>
+<div class="cards">
+<div class="card"><h3>Fully Insured</h3><p>Professional and reliable service.</p></div>
+<div class="card"><h3>Free Quotations</h3><p>No-obligation quotes on all work.</p></div>
+<div class="card"><h3>Professional Equipment</h3><p>Outstanding cleaning results.</p></div>
+<div class="card"><h3>Local Business</h3><p>Proudly serving Coalville and surrounding areas.</p></div>
 </div>
-
-<div class="features">
-
-<div class="feature-card">
-<h3>Fully Insured</h3>
-<p>Professional, reliable and fully insured service.</p>
 </div>
-
-<div class="feature-card">
-<h3>Free Quotations</h3>
-<p>No obligation quotes on all work.</p>
-</div>
-
-<div class="feature-card">
-<h3>Professional Equipment</h3>
-<p>Powerful equipment delivering outstanding results.</p>
-</div>
-
-<div class="feature-card">
-<h3>Local Business</h3>
-<p>Proudly serving Coalville and surrounding areas.</p>
-</div>
-
-</div>
-
-</div>
-
 </section>
+
+<section style="background:#f5f7fa">
+<div class="container">
+<h2 class="title">Before & After Gallery</h2>
+<div class="gallery">
+<div class="placeholder">Before / After Photo</div>
+<div class="placeholder">Before / After Photo</div>
+<div class="placeholder">Before / After Photo</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2 class="title">Services</h2>
+<div class="cards">
+<div class="card"><h3>Driveway Cleaning</h3><p>Block paving, concrete, tarmac and resin surfaces.</p></div>
+<div class="card"><h3>Patio Cleaning</h3><p>Indian sandstone, porcelain and natural stone.</p></div>
+<div class="card"><h3>Decking Cleaning</h3><p>Timber and composite decking restoration.</p></div>
+<div class="card"><h3>Commercial Cleaning</h3><p>Exterior cleaning for businesses and commercial sites.</p></div>
+</div>
+</div>
+</section>
+
+<section style="background:#f5f7fa">
+<div class="container">
+<h2 class="title">Typical Prices</h2>
+<table>
+<tr><th>Service</th><th>Small</th><th>Medium</th><th>Large</th></tr>
+<tr><td>Driveways</td><td>£120+</td><td>£180+</td><td>£275+</td></tr>
+<tr><td>Patios</td><td>£90+</td><td>£150+</td><td>£225+</td></tr>
+<tr><td>Decking</td><td>£120+</td><td>£180+</td><td>£225+</td></tr>
+</table>
+<br><br>
+<h2 class="title">Size Guide</h2>
+<div class="cards">
+<div class="card"><h3>Small</h3><p>Up to 100 sq ft (9m²)<br>Approx. 2.4m × 3m</p></div>
+<div class="card"><h3>Medium</h3><p>120–250 sq ft (11–23m²)</p></div>
+<div class="card"><h3>Large</h3><p>300+ sq ft (28m²+)</p></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2 class="title">Areas Covered</h2>
+<p style="text-align:center">Coalville • Whitwick • Ibstock • Ashby-de-la-Zouch • Hugglescote • Ellistown • Ravenstone • Swannington • Thringstone • Bagworth • Measham</p>
+</div>
+</section>
+
+<section id="quote" class="contact">
+<div class="container">
+<h2 class="title">Request a Free Quote</h2>
+<form>
+<input placeholder="Name">
+<input placeholder="Phone Number">
+<input placeholder="Email">
+<select><option>Driveway Cleaning</option><option>Patio Cleaning</option><option>Decking Cleaning</option></select>
+<textarea rows="5" placeholder="Tell us about your project"></textarea>
+<button type="button">Submit</button>
+</form>
+<br>
+<p><strong>Phone:</strong> 07521 420024<br>
+<strong>Email:</strong> Keepitcleanexteriorcleaning@hotmail.com</p>
+</div>
+</section>
+
+<footer>
+<p>Keep It Clean Exterior Cleaning</p>
+<p>Driveways • Patios • Decking</p>
+</footer>
+</body>
+</html>
